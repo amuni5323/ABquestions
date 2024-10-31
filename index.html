@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .output-container, .input-container {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .output {
+            font-weight: bold;
+            color: #444;
+            white-space: pre-wrap;
+        }
+        input {
+            padding: 5px;
+            width: 90%;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Array Count and String Reversal</h1>
+
+    <div class="input-container">
+        <h2>Count Array Occurrences</h2>
+        <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas">
+        <button onclick="displayCountMap()">Display Count Map</button>
+        <p id="countMapOutput" class="output"></p>
+    </div>
+
+    <div class="input-container">
+        <h2>Reverse String</h2>
+        <input type="text" id="stringInput" placeholder="Enter a string to reverse">
+        <button onclick="displayReversedString()">Display Reversed String</button>
+        <p id="reversedStringOutput" class="output"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
